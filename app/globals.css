@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: 0 0% 100%;
+  --color-foreground: 222.2 84% 4.9%;
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 222.2 84% 4.9%;
+  --color-primary: 142 76% 36%;
+  --color-primary-foreground: 210 40% 98%;
+  --color-muted: 210 40% 96.1%;
+  --color-muted-foreground: 215.4 16.3% 46.9%;
+  --color-border: 214.3 31.8% 91.4%;
+  --color-input: 214.3 31.8% 91.4%;
+  --color-ring: 142 76% 36%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--color-border));
+}
+
+body {
+  @apply bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 text-foreground min-h-screen;
+}
